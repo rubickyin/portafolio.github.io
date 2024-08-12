@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates';
+}
+
+body{
+    background: url(img/fondoAdiv.png) fixed no-repeat center;
+}
+
+.cuadro{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.89);
+    border-radius: 5px;
+    margin-top: 60px;
+    padding-top: 20px;
+
+    /* para sentrar los elementos*/
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 55px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* quitar las flechas que estan dentro de el input type number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.pantalla{
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+    border-style: solid;
+    border-color: #282631;
+    border-radius: 5px;    
+    margin: 30px 0 20px 0;
+}
+
+input[type=number]:focus {
+    border-color: #ff725e;
+    outline: 0 none;
+}
+
+button{
+    font-size: 25px;
+    border-radius: 5px;
+    border-color: #282631;
+    border-style: solid;
+    color: #282631;
+    background-color: #ff725e;
+    transition: 0.5s;
+    padding: 5px 10px;
+}
+
+button:hover{
+    background-color: #282631;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+#mensaje {
+    color: #282631;
+    font-size: 18px;
+}
+
+.hPensando{
+    margin: 0 10% 0 10%;
+}
+

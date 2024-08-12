@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates';
+}
+
+/* Centrado de fondo imagen */
+body {
+    background: url(/img/fondoPeru.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    margin-top: 3em;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    background-color: aliceblue;
+    /* background: linear-gradient(#e22014, #fe6517);*/
+    box-shadow: 1px 1px 10px 2px rgb(0, 0, 0);
+    border-radius: 15px;
+    color: #131a2a;
+    padding: 5px 15px;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li a {
+    text-decoration: none;
+    color: #131a2a;
+}
+
+li {
+    font-size: 25px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 1%;
+    margin-top: 1.7em;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: #131a2a;
+    cursor: pointer;
+}
+
+li.active {
+    background-color: #eb7224;
+    border-color: #131a2a;
+    border-style: solid;
+    color: #131a2a;
+}
+
+li:hover:not(.active) {
+    background-color: #131a2a;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.contenedor {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.651);
+    text-align: center;
+    margin-top: -8%;
+    height: 500px;
+    position: relative;
+    z-index: -1;
+    border-radius: 10px;
+    font-size: 95%;
+}
+
+.descripcion{
+    height: 100%;
+    /* background: linear-gradient(rgba(255, 255, 255, 0), #505050e5); */
+    position: absolute;
+    text-align: start;
+    color: aliceblue;
+    padding: 15px;
+    padding-top: 35%;
+}
+
+
+.fondo {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, 0%); 
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width:990px) and (min-width:320px) {
+    h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    li {
+        font-size: 10px;
+        text-align: center;
+        background-color: aliceblue;
+        padding: 5px;
+        margin: 1%;
+        margin-top: 1.7em;
+        border-radius: 10px;
+    }
+
+    .descripcion{
+        height: 100%;
+        /* background: linear-gradient(rgba(255, 255, 255, 0), #505050e5); */
+        position: absolute;
+        text-align: start;
+        color: #131a2a;
+        padding: 15px;
+        padding-top: 60%;
+    }
+
+    #titulo, #subtitulo{
+        font-size: 20px;
+    }
+
+    #parrafo{
+        color: #131a2ac5;
+    }
+
+}
